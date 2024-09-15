@@ -1,0 +1,24 @@
+body{
+    background-color: rgb(195, 176, 230);
+    font-family: 'Times New Roman', Times, serif;
+}
+table{
+    text-align: center;
+    height: 500px;
+    width: 500px;
+    vertical-align: middle;
+    background-color: rgb(blue, rgb(0, 96, 128), rgba(0, 204, 255, 0.201));
+    margin-left: auto;
+    margin-right: auto;
+    padding: 12px;
+}
+th{
+    font-size: 150%;
+}
+a:hover{
+    border-radius: 2px;
+    background-color: rgb(red, green, blue);
+    color: red;
+    width: auto;
+    height: auto;
+}
