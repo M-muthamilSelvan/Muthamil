@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            overflow: auto;
+            max-width: 1000px;
+            width: 100%;
+        }
+
+        .image-container {
+            width: 100%;
+            background: url('logo.jpg')no-repeat center center/cover;
+        }
+
+        .form-container{
+            width: 60%;
+            padding: 20px;
+        }
+
+        .form-container h2 {
+            margin-bottom: 400px;
+            color: #333;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .form-group textarea {
+            height: 100px;
+        }
+
+        .form-group button {
+            background-color: blue;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .form-group button:hover {
+            
+            background-color: whitesmoke;
+        }
+    </style>
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-container"></div>
+        <div class="form-container">
+            <h1>contact us</h1>
+            <form action="https://httpbin.org/get" method="get" target="_blank">
+                <div class="form-group">
+                <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="enter your name" required></div>
+                <div class="form-group">
+                    <label for="enail">Email:</label>
+                    <input type="text" id="email" name="mail" placeholder="enter your Email ID" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">message:</label>
+                    <textarea id="message" name="message"  placeholder="describe about yourself" required></textarea>
+                </div>
+                <div class="form-group">
+                <div style="text-align: center;">
+                <button type="submit">submit</button>
+                </div>
+                </div>
+                </form>
+                </div>
+                </div>
+                
+
+
+</body>
+</html>
