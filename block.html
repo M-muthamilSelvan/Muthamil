@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Blog Grid Container*/
+        .grid-container{
+            display: grid;
+            grid-template-columns: 1fr 3fr 1fr;/*Sidebar- Mian -Sidebar*/
+            grid-template-rows: auto auto 1fr auto;/*Header- Nav - Content -Footer*/
+            grid-template-areas: 
+            "header header header"
+            "nav nav nav"
+            "sidebar-main main sidebar-right"
+            "footer footer footer";
+            gap: 15px;
+            padding: 20px;
+            background-color: wheat;
+        }
+
+        /*Individual Grid Item Styles*/
+        .header{
+            grid-area: header;
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        } 
+
+        .nav{
+            grid-area: nav;
+            background-color: aqua;
+            color: black;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .sidebar-main{
+            grid-area: sidebar-main;
+            background-color: thistle;
+            padding: 20px;
+           
+        }
+
+        .main{
+            grid-area: main;
+            background-color: rgb(202, 20, 202);
+            padding:20px ;
+           border: 1px solid #333;
+        }
+
+        .sidebar-right{
+            grid-area: sidebar-right;
+            background-color: violet;
+            padding: 20px;
+        }
+        .footer{
+            grid-area: footer;
+            background-color: pink;
+            color: darkcyan;
+            padding: 20px;
+            text-align: center;
+        }
+        /* General Styling*/
+        body{
+            font-family: 'Times New Roman', sans-serif;
+            margin: 0;
+        }
+
+        h1, h2, h3 {
+            margin-top: 0;
+        }
+
+        p{
+           line-height: 1.6;
+        }
+
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+        .blog-image{
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="grid-container">
+        <!--Header-->
+        <header class="header">
+            <h1>My Awesome Blog</h1>
+            <p>Sharing thoughts, storires, annd ideas</p>
+        </header>
+
+        <!--Navigation Menu-->
+        <nav class="nav">
+            <a href="#home" style="color: white; margin-right:20px ;">Home</a>
+            <a href="#home" style="color: white; margin-right: 20px ;">About</a>
+            <a href="#home" style="color: white; ">Contact</a>
+        </nav>
+
+        <!--left Sidebar-->
+        <aside class="sidebar-main">
+            <h3>Popular Posts</h3>
+            <ul>
+                <li><a href="#">How to start a Blog</a></li>
+                <li><a href="#">Top 10 travel Destination</a></li>
+                <li><a href="#">Tips for Healthy Living</a></li>
+            </ul>
+        </aside>
+        <!--Main Content-->
+        <main class="main">
+            <h2>Expolring the Beauty of Nature</h2>
+            <img src="image2.png" alt="Nature" class="blog-image">
+            <p>
+                Nature has a way of captiviting us, from the serene beauty of vast forests to teh majestic peaks of towering mountains. In this blog , the was in the middle of the nature.
+            </p>
+            <p>some other days the nature was much beauty thet beauty was awesome like no one do that much in artificial its a nature of beauty
+
+            </p>
+            <h3>Why Nature matters</h3>
+            <p> the gives us for healthy and happy life for long term and over skins are also beauty and grow by the nature
+            </p>
+            <img src="image1.png" alt="Nature" class="blog-image">
+            <p></p> the gives us for healthy and happy life for long term and over skins are also beauty and grow by the nature
+        </main>
+        <!--Sidebar Right-->
+        <aside class="sidebar-right">
+            <h3>About the Auther</h3>
+            <img src="kimtaeyung.jpg" alt="Author" style="border-radius: 50%;">
+            <p> Hi, I'm Kim Taehyung , a nature enthusiast and photographer who loves expolring the wild. Follow my journey as I uncover the beauty of nature</p>
+        </aside>
+        <!--Footer-->
+        <footer class="footer">
+            <p>&copy; 2024 My Awesome Blog | All rights Reserved</p>
+        </footer>
+
+    </div>
+</body>
+</html>

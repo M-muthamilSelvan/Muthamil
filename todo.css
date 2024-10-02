@@ -1,0 +1,122 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.todo-app {
+    width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.app-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.task-containers {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+}
+
+/* Uncompleted Tasks Styles */
+.tasks.uncompleted-tasks {
+    width: 48%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+}
+
+.tasks h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.task {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icons i {
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #333;
+}
+
+.icons i:hover {
+    color: #007bff;
+}
+
+/* Completed Tasks Styles */
+.tasks.completed-tasks {
+    background-color: #edd4d4; /* Light green background for completed tasks */
+    padding: 15px;
+    border-radius: 5px;
+    width: 48%;
+}
+
+.task.completed {
+    background-color: #e6c3c3; /* Slightly darker green for individual completed tasks */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Trash icon for completed tasks */
+.task.completed .icons i {
+    cursor: pointer;
+    font-size: 18px;
+    color: #dc3545; /* Red color for trash icon */
+}
+
+.task.completed .icons i:hover {
+    color: #3621bd; /* Darker red when hovering over trash icon */
+}
+
+/* Add Task Form */
+.add-task form {
+    display: flex;
+    
+}
+
+.add-task input {
+    width: 80%;
+    padding: 10px;
+    border: 5px solid #cccccc;
+    border-radius: 55px;
+}
+
+.add-task button {
+    padding: 10px 20px;
+    background-color: #a72828;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.add-task button:hover {
+    background-color: #218838;
+}

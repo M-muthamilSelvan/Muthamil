@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact form</title>
+    <style>
+        body{
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #fcffc40c;
+        }
+        h1 {
+            text-align: center;
+            box-sizing: 10px 10px 10px rgb(255, 228, 196) ;
+        }
+        form{
+            background-color: rgba(128, 128, 128, 0.824);
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgb(rgb(225, 255, 0), green, rgb(0, 81, 255));
+            max-width: 600px;
+            margin: 0 auto;
+    
+
+        }
+        label{
+            display: block;
+            margin: 5px 0 5px;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width:100%;
+            padding: 5px;
+            margin: 5px 0 5px;
+            border-radius: 5px;
+            border: 1px solid #CCC;
+            font-size: 1rem;
+
+        }
+        button {
+            background-color: aquamarine;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="media-container">
+        <div class="image-container">
+            <h1>CONTACT US</h1>
+            <form action="https://httpbin.org.get" method="post" target="_blank">
+            <label for="name">NAME </label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">EMAIL </label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">MESSAGE </label>
+            <textarea id="message" id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">SUBMIT</button>
+            </form>
+    </div>
+    </div>
+</body>
+</html>

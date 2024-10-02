@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: azure;
+            padding: 20px;
+
+        }
+        h1{
+            text-align: center;
+            color: orange;
+            padding: 20px;
+        }
+        .container{
+            margin-top: 30px;
+            border: 1px solid #666;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 8px;
+        }
+        .container img{
+            float: left;
+            margin-right: 10px;
+            width: 150px;
+        }
+        .container p{
+            margin: 0;
+        }
+        .clearfix::after{
+            content: "";
+            clear: both;
+            display: table;
+            
+        }
+        .overflow-hidden{
+            overflow: hidden;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>FLOAT CLEARING METHOD</h1>
+    <div class="container">
+        <img src="https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcT4fALnFFR5dyT6x63pcguMoyefUc1HQg1RyHwI6Ag1n4g65il5bbMJ5RbxKzt7lZYezMQewCpoIuh6cg-M8JtOeMWcC4vJvPDO54O5WA">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque cum, dolore ratione aliquam magni distinctio veritatis corporis, sed eius quod vitae illum in iusto consectetur id voluptate delectus facere totam.</p>
+    </div>
+    <div class="container overflow-hidden">
+        <img src="https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcT4fALnFFR5dyT6x63pcguMoyefUc1HQg1RyHwI6Ag1n4g65il5bbMJ5RbxKzt7lZYezMQewCpoIuh6cg-M8JtOeMWcC4vJvPDO54O5WA">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque cum, dolore ratione aliquam magni distinctio veritatis corporis, sed eius quod vitae illum in iusto consectetur id voluptate delectus facere totam.</p>
+    </div>
+    <div class="container clearfix">
+        <img src="https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcT4fALnFFR5dyT6x63pcguMoyefUc1HQg1RyHwI6Ag1n4g65il5bbMJ5RbxKzt7lZYezMQewCpoIuh6cg-M8JtOeMWcC4vJvPDO54O5WA">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque cum, dolore ratione aliquam magni distinctio veritatis corporis, sed eius quod vitae illum in iusto consectetur id voluptate delectus facere totam.</p>
+    </div>
+</body>
+</html>

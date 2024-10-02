@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project1</title>
+<style>
+    body {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+margin: 8;
+background-color:gray;
+        }
+
+        .perspective-container {
+perspective: 1888px; 
+display: flex; 
+gap: 10px; 
+}
+.box {
+width: 200px;
+height: 50px;
+transition: transform 0.5s ease;
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+font-weight: bold;
+transform-style: preserve-3d;
+}
+.box1 {
+background-color: #4CAF50;
+}
+
+.box1:hover{
+
+transform: skew(20deg);
+}
+.box2 {
+background-color: #4c75af;
+}
+
+.box2:hover{
+
+transform: rotateY(90deg);
+}
+.box3{
+background-color: #af4c4c;
+}
+
+.box3:hover{
+
+transform: scalex(2); 
+
+}
+.box4{
+background-color: #af4cad;
+}
+
+.box4:hover{
+
+transform: translatey(100px);;
+}
+
+
+</style>
+</head>
+<body>  
+    <div class="perspective-container">
+        <div class="box box1">Skew</div>   
+        <div class="box box2">Rotate</div>   
+        <div class="box box3">Scale</div>
+        <div class="box box4">Translate</div>
+    </div>
+</body>
+</html>
+

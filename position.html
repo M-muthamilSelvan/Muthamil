@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: gray;
+        }
+        .container{
+            position: relative;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+
+        }
+        .box{
+            width: 200px;
+            height: 100px;
+            margin: 20px 0;
+            color: blue;
+            text-align: center;
+            line-height: 100px;
+        }
+        .static{
+            background-color: violet;
+        }
+        .relative{
+            position: relative;
+            top: 10px;
+            left: -20px;
+            background-color: greenyellow;
+        }
+        .absolute{
+            position: absolute;
+            top: 20px;
+            left: 500px;
+            background-color: red;
+        }
+        .fixed{
+            position: fixed;
+            top: 0;
+            right: 0;
+            background-color: orangered;
+        }
+        .sticky{
+            position: sticky;
+            background-color: green;
+            top:  20px;
+            right: top;
+            width: 200px;
+            height: 200px;
+            padding: 40px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <dic class="box static">STATIC BOX</dic>
+        <dic class="box relatives">RELATIVE BOX</dic>
+        <dic class="box absolute">ABSOLUTE BOX</dic>
+        <dic class="box fixed">FIXED BOX</dic>
+
+        <div style="height: 1000px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel necessitatibus vero modi. Repellendus nostrum id, voluptates vero, numquam sit nobis magnam provident excepturi consequuntur quam illum? Sit dignissimos a facilis!
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam, perspiciatis officia. Optio, nihil quas sit dolorum minima omnis voluptates tempore deleniti obcaecati cumque architecto voluptatem earum iste doloribus consectetur voluptatum?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam quibusdam earum perspiciatis error eaque, voluptate natus, molestiae repellendus autem illum, architecto vitae dignissimos amet consequatur alias aliquid repudiandae dolorem. Magnam?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio saepe perspiciatis quam doloribus, sint reprehenderit quae fuga itaque alias dolores hic eum id, facere necessitatibus cum minima dignissimos! Repellendus, cum!Loremlo
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ipsam quidem fuga porro animi voluptatibus harum pariatur doloremque dolorum nemo modi, perspiciatis quis, adipisci delectus incidunt deserunt ullam repudiandae culpa?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis nihil ipsa sed corrupti fugit, illum consequatur pariatur saepe, quasi nobis deserunt dolores magni officiis unde quae a nostrum mollitia molestias.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error voluptas, dolores ea corporis, dolor distinctio consectetur quasi aspernatur consequatur vitae ullam fugiat. Fugit tempora quaerat similique, optio beatae earum rem!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero amet quaerat facilis quis dignissimos sed optio neque doloremque numquam dolorum quisquam tempore repellendus natus autem, sint cupiditate, et unde architecto.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam esse distinctio repellendus exercitationem pariatur nam, facere facilis ipsam unde sed, velit magni est libero non asperiores, vitae mollitia tenetur et.
+            <dic class="box sticky">STICKEY BOX</dic>
+        </div>
+        <div class="tamil-container">
+            <img src="muthamilselvan.pdf">
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form document</title>
+    <style>
+        body{
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #FFE4C4;
+        }
+        h1 {
+            text-align: center;
+            box-sizing: 10px 10px 10px rgb(255, 228, 196) ;
+        }
+        form{
+            background-color: gray;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgb(red, green, rgb(0, 81, 255));
+            max-width: 600px;
+            margin: 0 auto;
+    
+
+        }
+        label{
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width:100%;
+            padding: 10px;
+            margin: 5px 0 20px;
+            border-radius: 5px;
+            border: 1px solid #CCC;
+            font-size: 1rem;
+
+        }
+        button {
+            background-color: aquamarine;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: blue;
+        }
+        .radio-group, .checkbox-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .radio-group label, .checkbox-group label {
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+
+        }
+        .radio-group input, .checkbox-group input {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+   <h1>REGISTRATION FORM</h1>
+   <form action="httpbin.org/get" method="GET" target="_blank">
+    <label for="fname">FIRST NAME :</label>
+        <input type ="text" id="fname" name="fname" required placeholder="TAMIL">
+    
+    <label for="email">EMAILS :
+        <input type ="email" id="email" name="fname" required placeholder="tamil@123">
+    <label for="AGE">AGE:</label>
+        <input type ="number" id="age" name="age" required placeholder="21">
+
+    <label for="WEBSITE">WEBSITE:</label>
+        <input type ="url" id="website" name="website" required placeholder="http://example.com">
+
+    <label for="DOB">DATE OF BIRTH :</label>
+        <input type ="date" id="dob" name="dob" required >    
+    
+    <label for="PHONE NUMBER">PHONE NUMBER :</label>
+        <input type ="tel" id="phone" name="phone" required placeholder="123456">
+
+    <!--radio button -->
+    <label>GENDER:</label>
+    <div class="radio-group">
+        <label><input type="radio" id="male" name="gender" value="male"/>male</label>
+        <label><input type="radio" id="female" name="gender" value="female"/>female</label>
+        <label><input type="radio" id="other" name="gender" value="other"/>other</label>
+    </div>
+
+    <!--check box-->
+
+    <label>LANGUAGES KNOWN:</label>
+    <div class="check=group">
+        <label><input type="checkbox" id="tamil" name="languages" value="tamil"/>tamil</label>
+        <label><input type="checkbox" id="spanish" name="languages" value="spanish"/>spanish</label>
+        <label><input type="checkbox" id="english" name="languages" value="english"/>english</label>
+    </div>
+
+    <!--dropbox-->
+    <label for="country">country</label>
+    <select id="country" name="country " required>
+        <option value="">--select your country--</option>
+        <option value="us">india</option>
+        <option value="ca">canada</option>
+        <option value="uk">united states</option>
+        <option value="au">australia</option>
+    </select>
+
+    <!--textarea-->
+    <label for="bio">brief bio:</label>
+    <textarea id="bio" rows="4" placeholder="tell us something about you"></textarea>
+
+    <!--submit button-->
+    <button type="submit">submit</button>
+    <button type="reset">reset</button>
+
+   </form>
+</body>
+</html>

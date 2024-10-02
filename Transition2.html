@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project1</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        
+        .btn{
+            background-color:#7d4caf;
+color: white;
+padding: 15px 30px;
+border: none;
+cursor: pointer;
+font-size: 16px;
+        }
+        .btn:hover{
+            background-color:#4c5caf;
+            font-size: 16px;
+        }
+        .btn-delay {
+
+background-color:#FF5733;
+color: white;
+padding: 15px 30px;
+width: 150px;
+border: none;
+cursor: pointer;
+font-size: 16px;
+transition: background-color is ease, width is ease-in-out;
+        }
+        .btn-delay:hover{
+
+background-color: #c70000;
+width: 200px;
+        }
+
+.btn-click{
+background-color: #4CAF50;
+color: white;
+cursor: pointer;
+font-size: 16px;
+transition: width 1s cubic-bezier (0.68, -0.55, 0.27, 1.55);
+width: 150px;
+}
+.btn:active:active{
+width:250px
+}
+
+
+    </style>
+</head>
+<body>
+    <h2>Button Transition Example</h2>
+
+<div class="button-container">
+
+<!-- Button with transition on hover -->
+
+<button class="btn">Hover Me</button>
+
+<!-- Button with a transition delay -->
+
+<button class="btn-delay">Hover With Delay</button>
+
+<!-- Button with a cubic beizer -->
+
+<button class="btn-click">click me!!</button>
+
+</div>
+</body>
+</html>
+

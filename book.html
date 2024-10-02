@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookMyCinemas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #ff4c4c;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .container {
+            margin: 20px auto;
+            max-width: 1200px;
+        }
+        .movie-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+        }
+        .movie-card img {
+            width: 150px;
+            height: 220px;
+            border-radius: 8px;
+            margin-right: 20px;
+        }
+        .movie-details {
+            flex-grow: 1;
+        }
+        .movie-details h2 {
+            margin: 0;
+            color: #333;
+        }
+        .movie-details p {
+            color: #666;
+            margin: 10px 0;
+        }
+        .book-button {
+            padding: 10px 20px;
+            background-color: #ff4c4c;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .book-button:hover {
+            background-color: #e94343;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>BookMyCinemas</h1>
+    </header>
+
+    <div class="container">
+        <!-- Movie Card -->
+        <div class="movie-card">
+            <img src="https://via.placeholder.com/150x220" alt="Movie Poster">
+            <div class="movie-details">
+                <h2>Movie Title 1</h2>
+                <p>Genre: Action, Adventure</p>
+                <p>Duration: 2h 30min</p>
+                <p>Release Date: September 28, 2024</p>
+                <button class="book-button">Book Now</button>
+            </div>
+        </div>
+
+        <div class="movie-card">
+            <img src="https://via.placeholder.com/150x220" alt="Movie Poster">
+            <div class="movie-details">
+                <h2>Movie Title 2</h2>
+                <p>Genre: Comedy, Drama</p>
+                <p>Duration: 1h 45min</p>
+                <p>Release Date: October 5, 2024</p>
+                <button class="book-button">Book Now</button>
+            </div>
+        </div>
+
+        <div class="movie-card">
+            <img src="https://via.placeholder.com/150x220" alt="Movie Poster">
+            <div class="movie-details">
+                <h2>Movie Title 3</h2>
+                <p>Genre: Horror, Thriller</p>
+                <p>Duration: 2h 10min</p>
+                <p>Release Date: October 12, 2024</p>
+                <button class="book-button">Book Now</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 BookMyCinemas. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

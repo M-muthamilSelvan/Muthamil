@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display properties
+    </title>
+    <style>
+        .container{
+            background-color: rgb(0, 8, 255);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .item{
+            padding: 20px;
+            margin: 5px;
+            background-color: gray;
+            color:black;
+        }
+        .block .item{
+            display: block;
+        }
+        .inline-block .item{
+            display: inline-block;
+            width: 200px;
+            text-align: center
+        }
+        .flex{
+            display: flex;
+            justify-content: space-around;
+        }
+         .grid{
+            display: grid;
+            grid-template-columns: 3fr 4fr 4fr;
+            gap: 10px;
+         }
+        .inline .item{
+            display: inline;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>DISPLAY BLOCK</h1>
+    <div class="container-block">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+    </div>
+    <h2>display inline-block</h2>
+    <dic class="container inline-block">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+    </dic>
+    <h2>display flex</h2>
+    <div class="container flex">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+    
+    </div>
+    <h2>display grid</h2>
+    <div class="container grid">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+    
+    </div>
+    <h2>display inline</h2>
+    <div class="container inline">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+    
+    </div>
+</body>
+</html>

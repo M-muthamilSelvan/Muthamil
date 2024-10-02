@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: antiquewhite;
+            padding: 20px;
+            text-align: center;
+        }
+        h1{
+            margin-bottom: 30px;
+            color: orangered;
+        }
+        h2{
+            margin: 20px 0;
+            color: green;
+            text-shadow:0cqmax
+        }
+
+        .iframe-container, .object-container{
+            margin-bottom: 40px;
+            display: flex;
+            justify-content: center;
+        }
+        iframe, object{
+            width: 600px;
+            height: 400px;
+            border: 2px solid #333;
+            box-shadow: 0 5px 15px rgba(0,0, 0,1);
+        }
+        .map-container iframe{
+            height: 450px;
+        }
+        a {
+            text-decoration: none;
+            color: blue;
+            font-size: 18px;
+            margin-top: 10px;
+            display: block;
+        }
+        .object-container object{
+            height: 500px;
+        }
+        button{
+            background-color: blue;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>EMBEDDED IFRAME AND OBJECT EXAMPLE</h1>
+    <div class="iframe-container">
+    <div>
+        <h2>EMBADDED IWEBPAGE</h2>
+        <iframe name="frame1" src="https://samplelib.com/" title="pexels"></iframe>
+        <a href="https://samplelib.com/" target="frame1">OPEN FOR SAMPLE AUDIO</a>
+        <a href="https://www.pexels.com/" target="frame1">OPEN FOR SAMPLE VIDEO</a>
+    </div>
+    </div>
+
+    <div class="iframe-container">
+        <div>
+            <h2>EMBADDED HTML DOCUMENT</h2>
+            <iframe src="media.html" title="HTML DOCUMENT" aria-label="HTML DOCUMENT"></iframe>
+        </div>
+    </div>
+    <div class="iframe-container pdf-container">
+        <div>
+            <h2>EMBADDED PDF</h2>
+            <iframe src="muthamilselvan.pdf" title="EMBADDED PDF" aria-label="user guide pdf"></iframe>
+        </div>
+    </div>
+    <div class="iframe-container map-container"></div>
+        <div>
+            <h2>EMBADDED GOOGLE MAP</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24011.155457224166!2d77.54579834999998!3d13.027088000000017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3d64217e438f%3A0xd1b3061712563cc4!2sYeswanthpur%2C%20Bengaluru%2C%20Karnataka!5e1!3m2!1sen!2sin!4v1726461461912!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">" title="EMBADDED PDF" aria-label="user guide pdf"></iframe>
+        </div>
+    </div>
+    <div class="object-container">
+        <div>
+            <h2>EMBADDED IMAGE</h2>
+            <object data="download5.jpeg" type="image/jpeg" aria-label="image1" width="500" height="500">
+                <p>your borwser does not support the image format .<a href="image2.webp"></a></p>
+            </object>
+        </div>
+    </div>
+    <div class="object-container" title="webpage" aria-label="webpage">
+        <div>
+            <h2>EMBADDED WEBPAGE USING OBJECT</h2>
+            <object data="https://samplelib.com/" type="text/html" aria-label="sample webpage">
+                <p>not support embadded webpage.<a href="https://www.wikipedia.org/" target="_blank">visit wikipedia</a></p>
+            </object>
+        </div>
+    </div>
+    <div class="button">
+        <div style="text-align: center;">
+            <button type="submit">SUBMIT</button>
+        </div>
+    </div>
+</body>
+</html>

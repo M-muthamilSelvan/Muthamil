@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pseudo-Elements Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    h1::before {
+      content: "NOTES:";
+      color: gold;
+    }
+
+    h1::after {
+      content: "ENDED";
+      color: gold;
+    }
+
+    p {
+      margin: 20px;
+      padding: 10px;
+      background: #f0f0f0;
+      border-left: 5px solid #007bff;
+    }
+
+    p::first-letter {
+      font-size: 2em;
+      color: red;
+    }
+
+    p::first-line {
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    ::selection {
+      background-color: yellow;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Welcome to Pseudo-Elements</h1>
+  
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+</body>
+</html>

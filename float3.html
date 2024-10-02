@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.header, .footer {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+.column {
+  float: left;
+  padding: 15px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.menu {
+  width: 20%;
+}
+
+.content {
+  width: 80%;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu {
+  width: 20%;
+}
+
+.content {
+  width: 80%;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 10px;
+   margin-bottom: 10px;
+  background-color: #f44336;
+  color: white;
+}
+
+.menu li:hover {
+  background-color: #e91e63;
+}
+
+.content h1 {
+  color: #333;
+}
+
+.content p {
+  color: #666;
+}
+
+.menu li:hover {
+  background-color: #e91e63;
+}
+
+.content h1 {
+  color: #333;
+}
+
+.content p {
+  color: #666;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Travel Guide</h1>
+</div>
+
+<div class="clearfix">
+  <div class="column menu">
+    <ul>
+      <li>Destinations</li>
+      <li>Hotels</li>
+      <li>Restaurants</li>
+      <li>Travel Tips</li>
+    </ul>
+  </div>
+
+  <div class="column content">
+    <h1>Destinations</h1>
+    <p>Explore the top destinations around the world. From the bustling cities to serene beaches, we cover it all.</p>
+    <p>More content about travel destinations and advice will follow in the upcoming sections.</p>
+  </div>
+</div>
+
+<div class="footer">
+  <p> © 2024 Travel Guide. All rights reserved.</p>
+</div>
+
+</body>
+</html>
